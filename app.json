@@ -1,0 +1,6 @@
+{
+  "name": "Start on Heroku: JAICF",
+  "description": "A barebones JAICF Google Assistant action that runs on Heroku.",
+  "image": "heroku/java",
+  "addons": []
+}
