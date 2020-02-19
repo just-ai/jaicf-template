@@ -1,6 +1,8 @@
 {
   "name": "Start on Heroku: JAICF",
   "description": "A barebones JAICF Google Assistant action that runs on Heroku.",
+  "repository": "https://github.com/just-ai/jaicf-template",
+  "logo": "https://cdn.freebiesupply.com/logos/thumbs/2x/kotlin-1-logo.png",
   "image": "heroku/java",
   "addons": []
 }
