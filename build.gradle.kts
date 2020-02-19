@@ -8,7 +8,7 @@ group = "com.justai.jaicf"
 version = "1.0.0"
 
 application {
-    mainClassName = "com.justai.jaicf.template.Server"
+    mainClassName = "com.justai.jaicf.template.ServerKt"
 }
 
 repositories {
