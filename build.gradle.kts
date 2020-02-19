@@ -46,3 +46,7 @@ tasks.withType<Jar> {
         )
     }
 }
+
+tasks.create("stage") {
+    dependsOn("shadowJar")
+}
