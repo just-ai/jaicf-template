@@ -49,3 +49,10 @@ git push
 ```
 
 Heroku will build and deploy your changes automatically.
+
+### Data persistence
+
+This template uses mongoDB persistence layer available on Heroku.
+Heroku automatically creates a free sandbox database hosted by MongoLab.
+
+During the local development a simple in-memory storage is used.
