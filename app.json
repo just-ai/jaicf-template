@@ -4,5 +4,5 @@
   "repository": "https://github.com/just-ai/jaicf-template",
   "logo": "https://cdn.freebiesupply.com/logos/thumbs/2x/kotlin-1-logo.png",
   "image": "heroku/java",
-  "addons": []
+  "addons": ["mongolab:sandbox"]
 }
