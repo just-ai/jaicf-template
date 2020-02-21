@@ -26,6 +26,7 @@ dependencies {
     implementation("com.justai.jaicf:core:0.0.1")
     implementation("com.justai.jaicf:google-actions:0.0.1")
     implementation("com.justai.jaicf:webhook:0.0.1")
+    implementation("com.justai.jaicf:mongo:0.0.1")
 }
 
 tasks {
