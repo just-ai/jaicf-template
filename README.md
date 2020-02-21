@@ -6,6 +6,11 @@ Here is a ready to use JAICF bot template that can be run locally or deployed to
 
 You can use this template locally on your PC or deploy it on Heroku server.
 
+### Run locally
+
+To run this project locally just create a new project from source codes in IntelliJ IDEA and run `Server.kt`.
+This will start the server on port 8080. You can then propagate your local instance to the Interrnet using `ssh -R 80:localhost:8080 ssh.localhost.run` to obtain the global URL. Copy this URL and use it as a fulfillment URL in your [Dialogflow](https://dialogflow.com) agent (see below).
+
 ### Deploy to Heroku
 
 Just click on the button below to deploy this template on Heroku server.
@@ -18,3 +23,29 @@ Just click on the button below to deploy this template on Heroku server.
 4. Click on _Google Assistant_ link on the left side bar to create a new Google Assistant Action connected to your Dialogflow agent.
 5. That's it! You now can start the app and see how you server responds with some responses.
 
+### How to upload code changes to Heroku
+
+Please make the next steps to upload your changes on Heroku.
+
+Install [git](https://git-scm.com/downloads) and [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+Run a terminal (or console) on your machine and type
+
+```
+heroku login
+heroku git:clone -a <your Heroku application name>
+cd <your Heroku application name>
+git remote add origin https://github.com/just-ai/jaicf-template
+git pull origin master
+```
+
+_You have to do these steps only once._
+
+Once you are ready to upload your changes to Heroku, just type
+
+```
+git add .
+git commit -am "some comments"
+git push
+```
+
+Heroku will build and deploy your changes automatically.
