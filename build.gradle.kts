@@ -7,6 +7,9 @@ plugins {
 group = "com.justai.jaicf"
 version = "1.0.0"
 
+val jaicf = "0.0.2"
+val slf4j = "1.7.30"
+
 application {
     mainClassName = "com.justai.jaicf.template.ServerKt"
 }
@@ -20,13 +23,13 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
-    implementation("org.slf4j:slf4j-simple:1.7.30")
-    implementation("org.slf4j:slf4j-log4j12:1.7.30")
+    implementation("org.slf4j:slf4j-simple:$slf4j")
+    implementation("org.slf4j:slf4j-log4j12:$slf4j")
 
-    implementation("com.justai.jaicf:core:0.0.1")
-    implementation("com.justai.jaicf:google-actions:0.0.1")
-    implementation("com.justai.jaicf:webhook:0.0.1")
-    implementation("com.justai.jaicf:mongo:0.0.1")
+    implementation("com.justai.jaicf:core:$jaicf")
+    implementation("com.justai.jaicf:google-actions:$jaicf")
+    implementation("com.justai.jaicf:webhook:$jaicf")
+    implementation("com.justai.jaicf:mongo:$jaicf")
 }
 
 tasks {
