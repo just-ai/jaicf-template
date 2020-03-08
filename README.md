@@ -9,7 +9,17 @@ You can use this template locally on your PC or deploy it on Heroku server.
 ### Run locally
 
 To run this project locally just create a new project from source codes in IntelliJ IDEA and run `Server.kt`.
-This will start the server on port 8080. You can then propagate your local instance to the Interrnet using `ssh -R 80:localhost:8080 ssh.localhost.run` to obtain the global URL. Copy this URL and use it as a fulfillment URL in your [Dialogflow](https://dialogflow.com) agent (see below).
+This will start the server on port 8080. 
+
+#### Obtain global URL
+
+You can then propagate your local instance to the Internet using 
+
+`ssh -R 80:localhost:8080 ssh.localhost.run`
+
+Or use [ngrok](https://ngrok.com/) to obtain the global URL if there is no `ssh` in your OS.
+
+Copy this URL then and use it as a fulfillment URL in your [Dialogflow](https://dialogflow.com) agent (see below).
 
 ### Deploy to Heroku
 
