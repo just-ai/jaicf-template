@@ -1,6 +1,6 @@
 package com.justai.jaicf.template
 
-import com.justai.jaicf.Bot
+import com.justai.jaicf.BotEngine
 import com.justai.jaicf.activator.catchall.CatchAllActivator
 import com.justai.jaicf.channel.googleactions.dialogflow.ActionsDialogflowActivator
 import com.justai.jaicf.context.manager.InMemoryBotContextManager
@@ -16,7 +16,7 @@ private val contextManager = System.getenv("MONGODB_URI")?.let { url ->
 
 } ?: InMemoryBotContextManager
 
-val templateBot = Bot(
+val templateBot = BotEngine(
     model = MainScenario.model,
     contextManager = contextManager,
     activators = arrayOf(
