@@ -13,11 +13,8 @@ This will start the server on port 8080.
 
 #### Obtain global URL
 
-You can then propagate your local instance to the Internet using 
-
-`ssh -R 80:localhost:8080 ssh.localhost.run`
-
-Or use [ngrok](https://ngrok.com/) to obtain the global URL if there is no `ssh` in your OS.
+You can then propagate your local instance to the Internet using [ngrok](https://ngrok.com/).
+And then run `ngrok http 8080` in the terminal to obtain public URL.
 
 Copy this URL then and use it as a fulfillment URL in your [Dialogflow](https://dialogflow.com) agent (see below).
 
