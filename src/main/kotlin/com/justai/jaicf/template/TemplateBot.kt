@@ -18,7 +18,7 @@ private val contextManager = System.getenv("MONGODB_URI")?.let { url ->
 
 val templateBot = BotEngine(
     model = MainScenario.model,
-    contextManager = contextManager,
+    defaultContextManager = contextManager,
     activators = arrayOf(
         ActionsDialogflowActivator,
         CatchAllActivator

@@ -1,6 +1,6 @@
 # JAICF Bot template
 
-Here is a ready to use JAICF bot template that can be run locally or deployed to Heroku server and connected to Google Assistant.
+Here is a ready to use [JAICF](https://github.com/just-ai/jaicf-kotlin) bot template that can be run locally or deployed to Heroku server and connected to Google Assistant.
 
 ## How to use
 
@@ -63,3 +63,7 @@ This template uses mongoDB persistence layer available on Heroku.
 Heroku automatically creates a free sandbox database hosted by MongoLab.
 
 During the local development a simple in-memory storage is used.
+
+## Community
+
+You're welcome to [join a Slack community](https://join.slack.com/t/jaicf/shared_invite/zt-duq07hx2-w_c71O8BnKDCIqhSXflRjA) to share your ideas or ask questions regarding the JAICF usage.

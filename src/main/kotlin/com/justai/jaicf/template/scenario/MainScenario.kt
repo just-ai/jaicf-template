@@ -17,18 +17,33 @@ object MainScenario: Scenario() {
             }
         }
 
-        state("fallback", noContext = true) {
-            activators {
-                catchAll()
-            }
-
-            action {
-                reactions.say("I have nothing to say yet...")
-                reactions.actions?.run {
-                    say("Bye bye!")
-                    endConversation()
-                }
+        fallback {
+            reactions.say("I have nothing to say yet...")
+            reactions.actions?.run {
+                say("Bye bye!")
+                endConversation()
             }
         }
+
+        /**
+         * Add more states with activators here. For example:
+         *
+         * state("my_state") {
+         *   activators {
+         *     intent("MY_INTENT")
+         *   }
+         *   action {
+         *     reactions.say("My intent has been received.")
+         *   }
+         *   state("my_inner_state") {
+         *     activators {
+         *       intent("ANOTHER_INTENT")
+         *     }
+         *     action {
+         *       reactions.say("The inner state was activated via another intent.")
+         *     }
+         *   }
+         * }
+         */
     }
 }
