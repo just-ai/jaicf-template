@@ -1,13 +1,13 @@
 plugins {
     application
-    kotlin("jvm") version "1.3.61"
+    kotlin("jvm") version "1.3.72"
     id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
 group = "com.justai.jaicf"
 version = "1.0.0"
 
-val jaicf = "0.5.0"
+val jaicf = "0.5.3"
 val slf4j = "1.7.30"
 val ktor = "1.3.1"
 
