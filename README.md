@@ -57,13 +57,6 @@ git push
 
 Heroku will build and deploy your changes automatically.
 
-### Data persistence
-
-This template uses mongoDB persistence layer available on Heroku.
-Heroku automatically creates a free sandbox database hosted by MongoLab.
-
-During the local development a simple in-memory storage is used.
-
 ## Community
 
 You're welcome to [join a Slack community](https://join.slack.com/t/jaicf/shared_invite/zt-duq07hx2-w_c71O8BnKDCIqhSXflRjA) to share your ideas or ask questions regarding the JAICF usage.

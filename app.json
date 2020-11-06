@@ -3,6 +3,5 @@
   "description": "A barebones JAICF Google Assistant action that runs on Heroku.",
   "repository": "https://github.com/just-ai/jaicf-template",
   "logo": "https://framework.just-ai.com/images/favicons/mstile-150x150.png",
-  "image": "heroku/java",
-  "addons": ["mongolab:sandbox"]
+  "image": "heroku/java"
 }
