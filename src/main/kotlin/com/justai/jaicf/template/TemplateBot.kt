@@ -5,7 +5,7 @@ import com.justai.jaicf.channel.googleactions.dialogflow.ActionsDialogflowActiva
 import com.justai.jaicf.template.scenario.MainScenario
 
 val templateBot = BotEngine(
-    model = MainScenario.model,
+    scenario = MainScenario,
     activators = arrayOf(
         ActionsDialogflowActivator
     )

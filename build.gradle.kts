@@ -1,15 +1,15 @@
 plugins {
     application
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.4.10"
     id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
 group = "com.justai.jaicf"
 version = "1.0.0"
 
-val jaicf = "0.8.2"
+val jaicf = "0.13.0"
 val slf4j = "1.7.30"
-val ktor = "1.3.1"
+val ktor = "1.4.0"
 
 application {
     mainClassName = "com.justai.jaicf.template.ServerKt"
